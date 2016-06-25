@@ -6,4 +6,4 @@ var searchYouTube = ({key, query, max}, callback) => {
 };
 
 window.searchYouTube = searchYouTube;
-
+window.slowYouTube = _.debounce(searchYouTube, 500);
